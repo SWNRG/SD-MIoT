@@ -1,6 +1,6 @@
 **SD-MIoT Controller**
- under major update (expected soon...)
+ source code under major update (expected soon...)
 
-The *VSD-MIoT Controller*, located in the infrastructure network, constitutes the heart of the WSN. 
+The *SD-MIoT Controller*, located in the infrastructure network, constitutes the heart of the WSN. 
 Operating on a computer system with high computational power and memory, performs costly computations and equips the WSN with centralized decision-making features. 
 SD-MIoT Controller manipulates an abstracted anatomy of the infrastructure network and utilizes sophisticated Network Control Algorithms, acclimatized to mobile WSN environments. In particular, it handles the following tasks: (i) maintains an abstract view of the network connectivity, the Network Graph, through the Network Modeler module using a hybrid topology discovery process adapted to mobile topologies, using two kinds of topology discovery algorithms (i.e., local and global); (ii) performs network routing and flow control decisions utilizing proactive and reactive flow establishment methods; (iii) adjusts the data-plane protocol parameters dynamically; and (iv) incorporates a variety of cross-layer connectivity information, like the Received Signal Strength Indicator (RSSI) and the Link Quality Indicator (LQI). The Controller's adaptation within the mobility context is orchestrated from the \emph{MCC} module, described in detail in the next subsection. The SD-MIoT Controller is implemented in Java and it is designed in a modular, scalable approach, i.e., also supporting a hierarchy of border-router motes that accommodate new algorithms and intelligent functionalities in a straightforward manner.
