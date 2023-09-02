@@ -10,5 +10,5 @@ echo "Creating softlinks"
 ./softLinkCreationScript
 
 #CHANGE THE IP ADDRESS OF THE SD-MIoT Controller
-java -jar sd-miot-to-vero-sdn-adapter.jar 192.168.63.1
+java -jar sd-miot-to-vero-sdn-adapter.jar localhost
 
