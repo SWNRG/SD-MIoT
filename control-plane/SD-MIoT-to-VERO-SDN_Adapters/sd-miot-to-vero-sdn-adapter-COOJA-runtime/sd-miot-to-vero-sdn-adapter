@@ -1,4 +1,12 @@
 #!/bin/bash
+
+# Check if a hostname argument is provided, otherwise default to "localhost"
+if [ -n "$1" ]; then
+    HOSTNAME="$1"
+else
+    HOSTNAME="localhost"
+fi
+
 echo "Do not forget to run it as root (or with sudo)"
 echo "Deleting old softlinks"
 rm -rf /dev/rm090*
@@ -10,5 +18,5 @@ echo "Creating softlinks"
 ./softLinkCreationScript
 
 #CHANGE THE IP ADDRESS OF THE SD-MIoT Controller
-java -jar sd-miot-to-vero-sdn-adapter.jar localhost
+java -jar sd-miot-to-vero-sdn-adapter.jar $HOSTNAME
 
